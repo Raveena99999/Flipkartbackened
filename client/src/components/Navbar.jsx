@@ -46,7 +46,7 @@ export default function Navbar() {
     try {
       
       const res = await fetch(
-        `http://localhost:8080/allproduct?${queryParams}`,
+        `https://flipkartbackened.onrender.com/allproduct?${queryParams}`,
         {
           method: "GET",
           headers: {
