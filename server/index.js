@@ -19,7 +19,7 @@ const {allproductRouter} =require("./routes/allproductroutes")
 const {twowheelerRouter}=require("./routes/twowheelersroutes")
 app.use(express.json())
 app.use(cors({
-    origin:"https://flipkartbackened.onrender.com/",
+    origin:"https://client-silk-two.vercel.app",
     credentials: true,
     httpOnly:true
 }))
