@@ -38,7 +38,7 @@ export default function Signup() {
   }
   async function handleSubmit() {
     try {
-      let res = await fetch(`http://localhost:8080/user/register`, {
+      let res = await fetch(`https://flipkartbackened.onrender.com/user/register`, {
         method: `POST`,
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(userdetails),

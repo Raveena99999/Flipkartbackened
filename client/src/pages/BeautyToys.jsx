@@ -12,7 +12,7 @@ export default function Grocery() {
   const {addItem} =useCart()
 
   async function fetchData() {
-    let res = await fetch(`http://localhost:8080/beauty`, {
+    let res = await fetch(`https://flipkartbackened.onrender.com/beauty`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

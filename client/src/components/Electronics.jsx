@@ -11,7 +11,7 @@ export default function Electronics() {
 
 
   async function fetchData() {
-    let res = await fetch(`http://localhost:8080/electronic/`, {
+    let res = await fetch(`https://flipkartbackened.onrender.com/electronic/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

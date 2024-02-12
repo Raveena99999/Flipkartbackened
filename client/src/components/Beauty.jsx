@@ -8,7 +8,7 @@ export default function Beauty() {
   const scrollRef = useRef(null);
 
   async function fetchData() {
-    let res = await fetch(`http://localhost:8080/beauty/`, {
+    let res = await fetch(`https://flipkartbackened.onrender.com/beauty/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

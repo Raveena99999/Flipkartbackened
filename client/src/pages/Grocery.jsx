@@ -17,7 +17,7 @@ export default function Grocery() {
   }
 
   async function fetchData() {
-    let res = await fetch(`http://localhost:8080/grocery`, {
+    let res = await fetch(`https://flipkartbackened.onrender.com/grocery`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

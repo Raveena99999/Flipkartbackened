@@ -19,7 +19,7 @@ export default function Twowheelers() {
 
 
   async function fetchData() {
-    let res = await fetch(`http://localhost:8080/twowheeler`, {
+    let res = await fetch(`https://flipkartbackened.onrender.com/twowheeler`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

@@ -18,7 +18,7 @@ export default function Fashion() {
     navigate("/login")
   }
   async function fetchData() {
-    let res = await fetch(`http://localhost:8080/clothing`, {
+    let res = await fetch(`https://flipkartbackened.onrender.com/clothing`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

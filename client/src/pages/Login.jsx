@@ -38,7 +38,7 @@ export default function Login() {
   }
   async function handleSubmit() {
     try {
-      let res = await fetch("http://localhost:8080/user/login", {
+      let res = await fetch("https://flipkartbackened.onrender.com/user/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
 
