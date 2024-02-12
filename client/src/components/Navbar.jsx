@@ -212,7 +212,6 @@ export default function Navbar() {
 
             <BreadcrumbItem>
               <Image src={Asset10} />
-              {/* <BreadcrumbLink href="/Cart">Cart</BreadcrumbLink> */}
               <Link to="/cart" onClick={() => navigate("/cart")}>
                 Cart
               </Link>
@@ -222,7 +221,6 @@ export default function Navbar() {
               display={{ base: "none", md: "flex", lg: "flex", xl: "flex" }}
             >
               <Image src={Asset11} />
-              {/* <BreadcrumbLink href="/Seller">Become a Seller</BreadcrumbLink> */}
               <Link to="/seller" onClick={() => navigate("/seller")}>
                 Become a Seller
               </Link>

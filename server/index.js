@@ -19,7 +19,7 @@ const {allproductRouter} =require("./routes/allproductroutes")
 const {twowheelerRouter}=require("./routes/twowheelersroutes")
 app.use(express.json())
 app.use(cors({
-    origin:"http://127.0.0.1:5173",
+    origin:"https://flipkartbackened.onrender.com/",
     credentials: true,
     httpOnly:true
 }))

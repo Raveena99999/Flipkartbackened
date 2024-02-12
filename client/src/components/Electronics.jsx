@@ -7,8 +7,7 @@ export default function Electronics() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const scrollRef = useRef(null);
 
-  const {addItem} =useCart()
-
+  const { addItem } = useCart();
 
   async function fetchData() {
     let res = await fetch(`https://flipkartbackened.onrender.com/electronic/`, {
@@ -18,7 +17,7 @@ export default function Electronics() {
       },
     });
     let data = await res.json();
-    console.log(data)
+    console.log(data);
     setElectronicData(data);
   }
 
@@ -38,7 +37,6 @@ export default function Electronics() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-    
   }, []);
 
   useEffect(() => {
@@ -173,8 +171,7 @@ export default function Electronics() {
               left="50%"
               transform="translateX(-50%)"
               _hover={{ bg: "blue.500" }}
-              onClick={()=>addItem(ele)}
-
+              onClick={() => addItem(ele)}
             >
               Add to Cart
             </Button>

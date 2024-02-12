@@ -34,7 +34,6 @@ export default function Swipperslider2() {
         pagination={{ clickable: true }}
         modules={[Autoplay, Pagination, Navigation]}
         onSwiper={(swiper) => console.log(swiper)}
-        // onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide>
           <Swipperslider1 images={Asset26} />

@@ -136,13 +136,13 @@ export default function Beauty() {
                 m="auto"
                 borderRadius="5px"
               />
-               <Text
+              <Text
                 fontSize="sm"
                 mt="0.5rem"
                 fontWeight="semibold"
                 textAlign="center"
               >
-                 {ele.productittle}
+                {ele.productittle}
               </Text>
               <Text
                 fontSize="sm"
@@ -150,7 +150,7 @@ export default function Beauty() {
                 fontWeight="semibold"
                 textAlign="center"
               >
-                 {ele.price}
+                {ele.price}
               </Text>
               <Text
                 fontSize="sm"
@@ -161,23 +161,6 @@ export default function Beauty() {
                 only {ele.quantity} left
               </Text>
 
-              {/* <Text
-                fontSize="sm"
-                mt="0.5rem"
-                fontWeight="semibold"
-                textAlign="center"
-              >
-                Skin Type: {ele.skin_type}
-              </Text> */}
-              {/* <Heading as="h4" size="md" textAlign="center" mt="0.5rem">
-                Hair Type: {ele.hair_type}
-              </Heading>
-              <Text fontSize="sm" mt="0.5rem" fontWeight="semibold" textAlign="center">
-                Eye Color: {ele.eye_color}
-              </Text> */}
-              {/* <Text fontSize="sm" mt="0.5rem" fontWeight="semibold" textAlign="center">
-                Nail Polish Color: {ele.nail_polish_color}
-              </Text> */}
               <Text
                 fontSize="sm"
                 fontWeight="semibold"

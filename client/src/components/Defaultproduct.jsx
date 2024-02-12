@@ -6,7 +6,7 @@ import ReactStars from "react-rating-stars-component";
 import { useCart } from "react-use-cart";
 export default function DefaultProduct() {
   const [defaultData, setdefaultData] = useState([]);
-  const {addItem} =useCart()
+  const { addItem } = useCart();
   async function fetchData() {
     let res = await fetch(`https://flipkartbackened.onrender.com/product`, {
       method: "GET",
@@ -68,21 +68,22 @@ export default function DefaultProduct() {
               <Text fontSize="0.8rem" mt="0.5rem" fontWeight="semibold">
                 {ele.productittle}
               </Text>
-              <Text fontSize="0.8rem" mt="0.5rem" color="green" fontWeight="semibold">
-               price: {ele.price}
+              <Text
+                fontSize="0.8rem"
+                mt="0.5rem"
+                color="green"
+                fontWeight="semibold"
+              >
+                price: {ele.price}
               </Text>
               <Text fontSize="1rem" mt="0.5rem" fontWeight="semibold">
                 Hurry up,only {ele.quantity} left
               </Text>
-              {/* <Text fontSize="1rem"  fontWeight="semibold">
-                 {ele.description}
-              </Text> */}
+
               <Text fontSize="0.8rem" mt="0.5rem" fontWeight="semibold">
                 {ele.discount}
               </Text>
-              {/* <Text fontSize="0.8rem" mt="0.5rem" fontWeight="semibold">
-                Expiration Date: {ele.expiration_date}
-              </Text> */}
+
               <Text fontSize="0.8rem" mt="0.5rem" fontWeight="semibold">
                 Category: {ele.category}
               </Text>
@@ -103,7 +104,7 @@ export default function DefaultProduct() {
                 color="white"
                 mt="1rem"
                 _hover={{ bg: "blue.500" }}
-                onClick={()=>addItem(ele)}
+                onClick={() => addItem(ele)}
               >
                 Add to Cart
               </Button>
