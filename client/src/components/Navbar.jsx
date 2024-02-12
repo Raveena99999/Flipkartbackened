@@ -58,6 +58,8 @@ export default function Navbar() {
       console.log(data);
       setSearchData(data)
       navigate("/search")
+      console.log("search")
+
     } catch (error) {
       console.log(error,"error")
     }
@@ -69,7 +71,7 @@ export default function Navbar() {
 
   async function handleLogout() {
     try {
-      const res = await fetch(`http://localhost:8080/user/logout`, {
+      const res = await fetch(`https://flipkartbackened.onrender.com/user/logout`, {
         method: "GET",
         credentials: "include",
         mode: "cors",
@@ -80,6 +82,10 @@ export default function Navbar() {
       let data = await res.json();
       if (data.msg === "User has been logged out successfully" && isLogin) {
         setIsLogin(false);
+
+        localStorage.removeItem("username");
+          setUsername(null);
+
         console.log(isLogin);
         toast({
           title: "Logged Out",
@@ -132,6 +138,7 @@ export default function Navbar() {
               
                  <InputLeftElement width='2.5rem' >
         <Button h='1.75rem' size='sm' onClick={handleSubmit} bg="white"  >
+
           <Image src={Asset63}  />
         </Button>
       </InputLeftElement>

@@ -21,3 +21,4 @@ allproductRouter.get("/", async (req, res) => {
 });
 
 module.exports = { allproductRouter };
+  
