@@ -17,12 +17,14 @@ import {
 } from "@chakra-ui/react";
 import Cart from "./Cart"
 import { useCart } from "react-use-cart";
+import {Navbar} from "../components/Navbar"
 function CartSection() {
   const { totalItems, Items } = useCart();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   return (
     <>
+    <Navbar/>
       <Flex
         align="center"
         w="35%"
