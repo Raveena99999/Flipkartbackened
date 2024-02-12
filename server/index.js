@@ -23,6 +23,7 @@ app.use(cors({
     credentials: true,
     httpOnly:true
 }))
+
 app.use(cookieParser())
 app.use("/user",userRouter)
 app.use("/product",defaultProductRouter)
@@ -34,6 +35,10 @@ app.use("/clothing",clothingRouter)
 app.use("/furniture",furnitureRouter)
 app.use("/twowheeler",twowheelerRouter)
 app.use("/allproduct",allproductRouter)
+
+app.get("/",(req,res)=>{
+    res.send("home")
+})
 app.listen(port,async()=>{
     try {
         await connection
