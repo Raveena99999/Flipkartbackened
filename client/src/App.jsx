@@ -25,6 +25,7 @@ import BeautyToys from "./pages/BeautyToys"
 import Fashion from "./pages/Fashion"
 import Electronicspage from "./pages/Electronicspage"
 import Search from "./pages/Search"
+import MyOrders from "./components/MyOrders"
 function App() {
 
   return (
@@ -57,6 +58,7 @@ function App() {
            <Route path="/twowheeler" element={<Twowheelers/>}></Route>
            <Route path="/fashion" element={<Fashion/>}></Route>
            <Route path="/search" element={<Search/>}></Route>
+           <Route path="/order" element={<MyOrders/>}></Route>
 
 
 

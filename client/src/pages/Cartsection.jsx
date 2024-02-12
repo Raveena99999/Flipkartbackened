@@ -17,11 +17,13 @@ import {
 } from "@chakra-ui/react";
 import Cart from "./Cart"
 import { useCart } from "react-use-cart";
+import { useNavigate } from "react-router-dom";
 // import Navbar from "../components/Navbar"
 function CartSection() {
   const { totalItems, Items } = useCart();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
+  const navigate = useNavigate()
   return (
     <>
     {/* <Navbar/> */}
@@ -66,7 +68,7 @@ function CartSection() {
             <Button variant="outline" mr={3} onClick={onClose}>
               Cancel
             </Button>
-            <Button colorScheme="blue">Check Out</Button>
+            <Button colorScheme="blue" onClick={()=>navigate("/order")}>Check Out</Button>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
