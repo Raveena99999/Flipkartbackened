@@ -30,9 +30,11 @@ Flipkart is one of India's leading e-commerce platforms, offering a wide range o
 
 ## Screenshot of home
 
-
 ![Screenshot 1](<https://i.ibb.co/6JhxCRf/Screenshot-44.png>)
-
+![Screenshot 2](<https://i.ibb.co/SmWydGM/Screenshot-45.png>)
+![Screenshot 3](<https://i.ibb.co/X40rX3R/Screenshot-47.png>)
+![Screenshot 4](<https://i.ibb.co/XW68h4B/Screenshot-48.png>)
+![Screenshot 5](<https://i.ibb.co/Fbmw3t3/Screenshot-50.png>)
 
 
 ## Installation
@@ -45,5 +47,21 @@ To run Sears locally, follow these steps:
 4. Navigate to the client directory: `cd Client`
 5. Install dependencies for the client: `npm install`
 6. Return to the root directory: `cd ..`
-7. Start the server: `npm run dev`
+7. Start the server: `npm run start`
 8. Start the client: `npm run dev`
+
+## Features Screenshot
+![Search](<https://i.ibb.co/QQnPQss/Screenshot-51.png>)
+![Cart](<https://i.ibb.co/CHTSpM8/Screenshot-52.png>)
+![Login](<https://i.ibb.co/QCLBTC0/Screenshot-53.png>)
+![Register](<https://i.ibb.co/M5gCJPw/Screenshot-59.png>)
+![Dummy Payment](<https://i.ibb.co/7vJYQtL/screencapture-jdclone-shivandrus-projects-vercel-app-orders-2024-02-15-12-37-36.png>)
+
+## Contributing
+
+We welcome contributions from the community! If you have any suggestions for improvement or would like to report a bug, please open an issue or submit a pull request.
+
+## Acknowledgements
+
+- This project was inspired by the need for a user-friendly and scalable ecommerce platform.
+- We would like to thank the open-source community for their invaluable contributions to the tools and libraries used in this project.
